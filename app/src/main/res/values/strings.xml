@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Soccer Fantasy App</string>
+    <string-array name="Position">
+        <item>GK</item>
+        <item>DF</item>
+        <item>MD</item>
+        <item>AT</item>
+    </string-array>
+    <string-array name="Sort">
+        <item>Sort by Name</item>
+        <item>Sort by Age</item>
+        <item>Sort by height</item>
+
+    </string-array>
+    <string name="ACTION_SETTING">DO  SOME</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="sort_roster">SORT ROSTER</string>
+    <string name="select_dob">SELECT DOB</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="add_player">ADD PLAYER</string>
+    <string name="myself">MySelf</string>
+    <string name="send_msg">Send MSG</string>
+    <string name="player_name">Player Name</string>
+    <string name="remove_player">REMOVE PLAYER</string>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addActivity">
+
+
+    <EditText
+        android:id="@+id/playerNameTxt"
+        android:layout_width="@dimen/dp240"
+        android:layout_height="@dimen/dp44"
+        android:layout_marginStart="@dimen/dp28"
+        android:layout_marginLeft="@dimen/dp28"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginBottom="@dimen/dp8"
+        android:ems="10"
+        android:hint="@string/player_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/searchBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="@dimen/dp64"
+        android:layout_height="@dimen/dp29"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:background="@color/design_default_color_secondary"
+        android:layout_marginBottom="@dimen/dp8"
+        app:layout_constraintBottom_toBottomOf="@+id/searchBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <Button
+        android:id="@+id/dobBtn"
+        android:layout_width="@dimen/dp248"
+        android:layout_height="@dimen/dp44"
+        android:layout_marginTop="@dimen/dp156"
+        android:layout_marginEnd="@dimen/dp56"
+        android:layout_marginRight="@dimen/dp56"
+        android:layout_marginBottom="8dp"
+        android:background="@color/design_default_color_secondary"
+        android:text="@string/select_dob"
+        app:layout_constraintBottom_toBottomOf="@+id/ageTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ageTxt"
+        android:layout_width="@dimen/dp97"
+        android:layout_height="@dimen/dp38"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp48"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:text="@string/age"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/dobBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerNumber" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="@dimen/dp325"
+        android:layout_height="@dimen/dp20"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp36"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:background="@color/design_default_color_secondary"
+        app:layout_constraintEnd_toEndOf="@+id/dobBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ageTxt"
+        app:layout_constraintTop_toBottomOf="@+id/dobBtn" />
+
+    <TextView
+        android:id="@+id/heightTxt"
+        android:layout_width="107dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginBottom="@dimen/dp8"
+        android:text="@string/height"
+        android:textSize="@dimen/dp30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/playerNumber"
+        android:layout_width="177dp"
+        android:layout_height="@dimen/dp44"
+        android:layout_marginStart="@dimen/dp28"
+        android:layout_marginLeft="@dimen/dp28"
+        android:layout_marginTop="@dimen/dp28"
+        android:ems="10"
+        android:hint="Player Number"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerNameTxt" />
+
+    <TextView
+        android:id="@+id/searchBtn"
+        android:layout_width="@dimen/dp64"
+        android:layout_height="@dimen/dp38"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp8"
+        android:text="Pos"
+        android:textSize="@dimen/dp30"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/playerNameTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="@dimen/dp135"
+        android:layout_height="@dimen/dp44"
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@color/design_default_color_secondary"
+        android:text="@string/add_player"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightTxt"
+        app:layout_constraintVertical_bias="0.246"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_marginBottom="@dimen/dp8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
