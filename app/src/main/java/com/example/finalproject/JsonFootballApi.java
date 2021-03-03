@@ -1,3 +1,5 @@
+//Descripto: This activity reads the online API received directly into a JSON
+
 package com.example.finalproject;
 
 import java.util.List;

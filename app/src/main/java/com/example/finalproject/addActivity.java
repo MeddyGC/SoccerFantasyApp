@@ -28,7 +28,6 @@ import java.text.DateFormat;
 import java.util.Calendar;
 /**
  Author : Mohamed Conde
- Due Date: 1/24/2020
  Description: A This activitity get the details entered by the user on a form and prompts them to select an image
 
 

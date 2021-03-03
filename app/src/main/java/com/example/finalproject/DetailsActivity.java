@@ -1,3 +1,5 @@
+// Description: The control the layout for fixtures details in the app
+
 package com.example.finalproject;
 
 import androidx.appcompat.app.AppCompatActivity;

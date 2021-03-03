@@ -1,3 +1,4 @@
+//Description: This is the Class for the API details in the JSON file
 package com.example.finalproject;
 
 public class Football {

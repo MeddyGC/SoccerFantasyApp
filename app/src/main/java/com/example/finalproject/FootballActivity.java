@@ -1,3 +1,4 @@
+// Description: This activity stores the json file into its class which makes it readable and well formated
 package com.example.finalproject;
 
 import android.content.Intent;
